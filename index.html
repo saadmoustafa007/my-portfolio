@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad El Dine Moustafa | معرض الأعمال الشخصي</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+    <!-- Background Tech Grid / Glowing Orbs -->
+    <div class="tech-bg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text lang-ar">سعد الدين</span>
+                <span class="logo-text lang-en">SAAD</span>
+                <span class="logo-dot">.</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">
+                    <span class="lang-ar">الرئيسية</span>
+                    <span class="lang-en">Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <span class="lang-ar">من أنا</span>
+                    <span class="lang-en">About</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <span class="lang-ar">المهارات</span>
+                    <span class="lang-en">Skills</span>
+                </a>
+                <a href="#experience" class="nav-link">
+                    <span class="lang-ar">الخبرات</span>
+                    <span class="lang-en">Experience</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span class="lang-ar">اتصل بي</span>
+                    <span class="lang-en">Contact</span>
+                </a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Language Toggle Button -->
+                <button class="lang-toggle-btn" id="langToggle" aria-label="Toggle Language">
+                    <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span class="btn-text lang-ar">English</span>
+                    <span class="btn-text lang-en">العربية</span>
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge fade-in">
+                    <span class="pulse-dot"></span>
+                    <span class="lang-ar">متاح للعمل والمشاريع</span>
+                    <span class="lang-en">Available for Projects</span>
+                </div>
+                <h1 class="hero-title fade-in">
+                    <span class="lang-ar">سعد الدين مصطفى</span>
+                    <span class="lang-en">SAAD EL DINE MOUSTAFA</span>
+                </h1>
+                <h2 class="hero-subtitle fade-in">
+                    <span class="lang-ar">فني كاميرات مراقبة وأنظمة تحكم &amp; مبرمج</span>
+                    <span class="lang-en">CCTV &amp; Control Systems Technician &amp; C.S. Student</span>
+                </h2>
+                <p class="hero-description fade-in">
+                    <span class="lang-ar">متخصص في تركيب وصيانة شبكات المراقبة الأمنية والتحكم الذكي، إلى جانب تطوير البرمجيات وحلول الويب. أدمج بين الخبرة الميدانية في الأنظمة الفيزيائية والقدرة البرمجية لبناء بنية تحتية تقنية آمنة وذكية.</span>
+                    <span class="lang-en">Specialized in installing and maintaining security surveillance networks and smart control systems, combined with software development and web solutions. I integrate hands-on physical hardware experience with programming skills to deliver secure, smart technical infrastructure.</span>
+                </p>
+                <div class="hero-buttons fade-in">
+                    <a href="#contact" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        <span class="lang-ar">تواصل معي الآن</span>
+                        <span class="lang-en">Contact Me</span>
+                    </a>
+                    <!-- PDF Download Link -->
+                    <a href="Saad_El_Dine_Moustafa_CV.pdf" download class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        <span class="lang-ar">تحميل السيرة الذاتية</span>
+                        <span class="lang-en">Download CV</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Tech Illustration / CCTV and Network Concept -->
+            <div class="hero-visual fade-in">
+                <div class="interactive-card">
+                    <div class="card-glow"></div>
+                    <div class="tech-graphic">
+                        <!-- Custom SVG Graphic depicting a Camera + Network nodes + Code lines -->
+                        <svg viewBox="0 0 200 200" class="svg-graphic">
+                            <!-- Background Grid -->
+                            <defs>
+                                <pattern id="visual-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0, 195, 255, 0.07)" stroke-width="1"/>
+                                </pattern>
+                                <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#00c3ff" />
+                                    <stop offset="100%" stop-color="#0055ff" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#visual-grid)" />
+                            
+                            <!-- Network Connections -->
+                            <path class="animated-path" d="M30,100 L70,50 L130,50 L170,100 L130,150 L70,150 Z" fill="none" stroke="rgba(0, 195, 255, 0.3)" stroke-width="2" />
+                            <line x1="70" y1="50" x2="100" y2="100" stroke="rgba(0, 85, 255, 0.2)" stroke-width="1.5" />
+                            <line x1="130" y1="50" x2="100" y2="100" stroke="rgba(0, 85, 255, 0.2)" stroke-width="1.5" />
+                            <line x1="170" y1="100" x2="100" y2="100" stroke="rgba(0, 85, 255, 0.2)" stroke-width="1.5" />
+                            <line x1="130" y1="150" x2="100" y2="100" stroke="rgba(0, 85, 255, 0.2)" stroke-width="1.5" />
+                            <line x1="70" y1="150" x2="100" y2="100" stroke="rgba(0, 85, 255, 0.2)" stroke-width="1.5" />
+                            <line x1="30" y1="100" x2="100" y2="100" stroke="rgba(0, 85, 255, 0.2)" stroke-width="1.5" />
+
+                            <!-- Pulsing Nodes -->
+                            <circle class="pulse-node" cx="70" cy="50" r="6" fill="#00c3ff" />
+                            <circle class="pulse-node" cx="130" cy="50" r="6" fill="#0055ff" />
+                            <circle class="pulse-node" cx="170" cy="100" r="6" fill="#00c3ff" />
+                            <circle class="pulse-node" cx="130" cy="150" r="6" fill="#0055ff" />
+                            <circle class="pulse-node" cx="70" cy="150" r="6" fill="#00c3ff" />
+                            <circle class="pulse-node" cx="30" cy="100" r="6" fill="#0055ff" />
+                            
+                            <!-- Central Hub: CCTV camera icon inside a screen -->
+                            <rect x="80" y="80" width="40" height="40" rx="8" fill="rgba(10, 25, 50, 0.9)" stroke="url(#primary-grad)" stroke-width="2" />
+                            <!-- Camera drawing -->
+                            <path d="M92,98 L104,98 L104,106 L92,106 Z" fill="none" stroke="#00c3ff" stroke-width="2" />
+                            <path d="M104,100 L109,97 L109,107 L104,104" fill="none" stroke="#00c3ff" stroke-width="2" />
+                            <circle cx="95" cy="102" r="1.5" fill="#00c3ff" />
+                            <circle class="pulse-red" cx="100" cy="92" r="3" fill="#ff3366" />
+                        </svg>
+                    </div>
+                    <div class="system-status">
+                        <div class="status-item">
+                            <span class="status-label lang-ar">الأنظمة الأمنية</span>
+                            <span class="status-label lang-en">Sec Systems</span>
+                            <span class="status-val text-green">ONLINE</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label lang-ar">البرمجة والتطوير</span>
+                            <span class="status-label lang-en">Dev Stack</span>
+                            <span class="status-val text-cyan">ACTIVE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">من أنا</span>
+                    <span class="lang-en">About Me</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-info">
+                    <p class="about-lead">
+                        <span class="lang-ar">أنا سعد الدين مصطفى، أجمع بين العلوم النظرية للبرمجيات والتطبيق الميداني للأنظمة الإلكترونية.</span>
+                        <span class="lang-en">I am Saad El Dine Moustafa, combining the theoretical foundations of Computer Science with hands-on electronic and systems engineering.</span>
+                    </p>
+                    <p class="about-text">
+                        <span class="lang-ar">حاصل على إجازة فنية في البرمجة وطالب علوم كمبيوتر (خريج 2025). أمتلك خبرة عملية تزيد عن سنتين في تركيب وبرمجة وصيانة شبكات المراقبة التلفزيونية CCTV والأنظمة الأمنية المتكاملة، بالإضافة لتأسيس شبكات الاتصال المحلية السلكية واللاسلكية وتكوين مسجلات DVR/NVR.</span>
+                        <span class="lang-en">Holder of a Technical License (LT) in Programming and a Computer Science student (Graduating 2025). I have over 2 years of practical experience installing, programming, and maintaining CCTV networks and integrated security systems, configuring local area networks (LAN), and setting up DVR/NVR servers.</span>
+                    </p>
+                    <p class="about-text">
+                        <span class="lang-ar">لدي اهتمام خاص بإنترنت الأشياء (IoT) والأنظمة المدمجة وأقوم حالياً بدراسة برمجة الـ Arduino لربط الأنظمة الفيزيائية بالحلول البرمجية الذكية.</span>
+                        <span class="lang-en">I have a special interest in IoT (Internet of Things) and embedded systems, currently studying Arduino programming to bridge the gap between physical hardware and smart software solutions.</span>
+                    </p>
+                </div>
+                
+                <div class="about-details">
+                    <div class="details-card">
+                        <div class="detail-row">
+                            <span class="detail-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </span>
+                            <div class="detail-content">
+                                <span class="detail-label lang-ar">الموقع</span>
+                                <span class="detail-label lang-en">Location</span>
+                                <span class="detail-value lang-ar">عكار، الكواشرة، لبنان</span>
+                                <span class="detail-value lang-en">Akkar, Kawachra, Lebanon</span>
+                            </div>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </span>
+                            <div class="detail-content">
+                                <span class="detail-label lang-ar">التعليم</span>
+                                <span class="detail-label lang-en">Education</span>
+                                <span class="detail-value lang-ar">علوم كمبيوتر &amp; إجازة فنية برمجة</span>
+                                <span class="detail-value lang-en">Computer Science &amp; LT Programming</span>
+                            </div>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            </span>
+                            <div class="detail-content">
+                                <span class="detail-label lang-ar">اللغات</span>
+                                <span class="detail-label lang-en">Languages</span>
+                                <span class="detail-value lang-ar">العربية (الأم) / الإنجليزية (جيد)</span>
+                                <span class="detail-value lang-en">Arabic (Native) / English (Good)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">المهارات التقنية</span>
+                    <span class="lang-en">Technical Skills</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Skills Filter / Tabs -->
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-filter="all">
+                    <span class="lang-ar">الكل</span>
+                    <span class="lang-en">All</span>
+                </button>
+                <button class="tab-btn" data-filter="cctv">
+                    <span class="lang-ar">CCTV وأنظمة التحكم</span>
+                    <span class="lang-en">CCTV &amp; Control</span>
+                </button>
+                <button class="tab-btn" data-filter="software">
+                    <span class="lang-ar">البرمجة وقواعد البيانات</span>
+                    <span class="lang-en">Coding &amp; DB</span>
+                </button>
+                <button class="tab-btn" data-filter="network">
+                    <span class="lang-ar">الشبكات والإلكترونيات</span>
+                    <span class="lang-en">Networking &amp; Hardware</span>
+                </button>
+            </div>
+
+            <div class="skills-grid">
+                <!-- CCTV & Control Systems -->
+                <div class="skill-card" data-category="cctv">
+                    <div class="skill-info">
+                        <div class="skill-icon">
+                            <!-- Custom CCTV SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 10h20M2 14h20M3 10V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4M3 14v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4"/></svg>
+                        </div>
+                        <h3 class="skill-title">
+                            <span class="lang-ar">تركيب أنظمة CCTV</span>
+                            <span class="lang-en">CCTV Installation</span>
+                        </h3>
+                    </div>
+                    <div class="skill-progress-wrapper">
+                        <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+                        <span class="progress-percent">95%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="cctv">
+                    <div class="skill-info">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2" ry="2"/><path d="M6 12h12M12 6v12"/></svg>
+                        </div>
+                        <h3 class="skill-title">
+                            <span class="lang-ar">تهيئة أجهزة DVR / NVR</span>
+                            <span class="lang-en">DVR / NVR Configuration</span>
+                        </h3>
+                    </div>
+                    <div class="skill-progress-wrapper">
+                        <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                        <span class="progress-percent">90%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="cctv">
+                    <div class="skill-info">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.6 1z"/></svg>
+                        </div>
+                        <h3 class="skill-title">
+                            <span class="lang-ar">أنظمة التحكم والصيانة</span>
+                            <span class="lang-en">Control Systems Maintenance</span>
+                        </h3>
+                    </div>
+                    <div class="skill-progress-wrapper">
+                        <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+                        <span class="progress-percent">85%</span>
+                    </div>
+                </div>
+
+                <!-- Software & Programming -->
+                <div class="skill-card" data-category="software">
+                    <div class="skill-info">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3 class="skill-title">
+                            <span class="lang-ar">لغات البرمجة (JS, Python, HTML)</span>
+                            <span class="lang-en">Programming (JS, Python, HTML)</span>
+                        </h3>
+                    </div>
+                    <div class="skill-progress-wrapper">
+                        <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+                        <span class="progress-percent">80%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="software">
+                    <div class="skill-info">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                        </div>
+                        <h3 class="skill-title">
+                            <span class="lang-ar">قواعد البيانات (MySQL)</span>
+                            <span class="lang-en">Databases (MySQL)</span>
+                        </h3>
+                    </div>
+                    <div class="skill-progress-wrapper">
+                        <div class="progress-bar"><div class="progress-fill" style="width: 75%"></div></div>
+                        <span class="progress-percent">75%</span>
+                    </div>
+                </div>
+
+                <!-- Networking & Electronics -->
+                <div class="skill-card" data-category="network">
+                    <div class="skill-info">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        </div>
+                        <h3 class="skill-title">
+                            <span class="lang-ar">شبكات الاتصال المحلية (LAN, IP)</span>
+                            <span class="lang-en">Basic Networking (LAN, IP)</span>
+                        </h3>
+                    </div>
+                    <div class="skill-progress-wrapper">
+                        <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+                        <span class="progress-percent">85%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="network">
+                    <div class="skill-info">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M8 2v20M16 2v20M2 8h20M2 16h20"/></svg>
+                        </div>
+                        <h3 class="skill-title">
+                            <span class="lang-ar">اللوحات المدمجة (Arduino)</span>
+                            <span class="lang-en">Embedded (Arduino)</span>
+                        </h3>
+                    </div>
+                    <div class="skill-progress-wrapper">
+                        <div class="progress-bar"><div class="progress-fill" style="width: 70%"></div></div>
+                        <span class="progress-percent">70%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="network">
+                    <div class="skill-info">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <h3 class="skill-title">
+                            <span class="lang-ar">صيانة وإصلاح الأعطال</span>
+                            <span class="lang-en">Troubleshooting &amp; Wiring</span>
+                        </h3>
+                    </div>
+                    <div class="skill-progress-wrapper">
+                        <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                        <span class="progress-percent">90%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+    <section id="experience" class="experience-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">الخبرة العملية والتعليم</span>
+                    <span class="lang-en">Experience &amp; Education</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- CCTV Job -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - <span class="lang-ar">الآن</span><span class="lang-en">Present</span></div>
+                    <div class="timeline-content">
+                        <h3>
+                            <span class="lang-ar">فني كاميرات مراقبة وأنظمة تحكم</span>
+                            <span class="lang-en">CCTV &amp; Control Systems Technician</span>
+                        </h3>
+                        <h4 class="timeline-org">
+                            <span class="lang-ar">عمل حر ومشاريع تعاقدية</span>
+                            <span class="lang-en">Freelance / Contractual Projects</span>
+                        </h4>
+                        <ul class="timeline-details">
+                            <li class="lang-ar">تركيب وتثبيت كاميرات المراقبة التلفزيونية CCTV المتطورة (IP, Analog).</li>
+                            <li class="lang-en">Installation and testing of CCTV surveillance systems (IP &amp; Analog).</li>
+                            
+                            <li class="lang-ar">إعداد وضبط أجهزة التسجيل الرقمية DVR و NVR وربطها بالشبكة لعرض البث عن بعد.</li>
+                            <li class="lang-en">Setup, configuration, and maintenance of DVR and NVR recording systems.</li>
+                            
+                            <li class="lang-ar">تمديد وتركيب الكابلات الخاصة بالطاقة والفيديو والشبكات بشكل منظم وآمن.</li>
+                            <li class="lang-en">Wiring and cable management (power, video, and network lines).</li>
+                            
+                            <li class="lang-ar">ربط الأجهزة بالإنترنت وتطبيق ضبط كشف الحركة (Motion Detection) والتنبيهات.</li>
+                            <li class="lang-en">Connecting surveillance hubs to local networks for online access and configuring smart alerts.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education - LT Programming -->
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - 2026</div>
+                    <div class="timeline-content">
+                        <h3>
+                            <span class="lang-ar">الإجازة الفنية (LT) - برمجة</span>
+                            <span class="lang-en">Technical License (LT) - Programming</span>
+                        </h3>
+                        <h4 class="timeline-org">
+                            <span class="lang-ar">معهد الشيخ طه الفني - عكار، لبنان</span>
+                            <span class="lang-en">Institut Technique Cheikh Taha - Akkar, Lebanon</span>
+                        </h4>
+                        <p class="timeline-desc">
+                            <span class="lang-ar">تخصص مركّز في تقنيات البرمجة المتقدمة وقواعد البيانات وهندسة التطبيقات، وتطوير الحلول البرمجية المتكاملة.</span>
+                            <span class="lang-en">Focused curriculum on advanced programming techniques, database systems, software engineering, and end-to-end application development.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Education - Bachelor CS -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>
+                            <span class="lang-ar">بكالوريوس علوم الكمبيوتر</span>
+                            <span class="lang-en">Bachelor's Degree in Computer Science</span>
+                        </h3>
+                        <h4 class="timeline-org">
+                            <span class="lang-ar">معهد الشيخ طه الفني - عكار، لبنان</span>
+                            <span class="lang-en">Institut Technique Cheikh Taha - Akkar, Lebanon</span>
+                        </h4>
+                        <p class="timeline-desc">
+                            <span class="lang-ar">دراسة أساسيات الحاسب الآلي، هياكل البيانات والخوارزميات، لغات البرمجة (Python, JS), قواعد البيانات وإدارة البيانات التحليلية.</span>
+                            <span class="lang-en">Studied computer science fundamentals, data structures, algorithms, coding languages (Python, JS), databases, and analytical data management.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-ar">تواصل معي</span>
+                    <span class="lang-en">Contact Me</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-cards">
+                    <!-- Phone Card -->
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="lang-ar">اتصال مباشر / واتساب</h4>
+                            <h4 class="lang-en">Call / WhatsApp</h4>
+                            <a href="tel:+96176580224" class="info-link">+961 76 580 224</a>
+                            <a href="https://wa.me/96176580224" target="_blank" class="whatsapp-btn">
+                                <span class="lang-ar">محادثة واتساب سريعة</span>
+                                <span class="lang-en">Chat on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="lang-ar">البريد الإلكتروني</h4>
+                            <h4 class="lang-en">Email Address</h4>
+                            <a href="mailto:saad.moustafa302@gmail.com" class="info-link">saad.moustafa202@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Location Card -->
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="lang-ar">مقر الإقامة والمشاريع</h4>
+                            <h4 class="lang-en">Service Coverage</h4>
+                            <p class="info-link">
+                                <span class="lang-ar">عكار، الكواشرة، وكافة المناطق اللبنانية</span>
+                                <span class="lang-en">Kawachra, Akkar, Lebanon</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="lang-ar">الاسم الكريم</label>
+                            <label for="name" class="lang-en">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="أدخل اسمك هنا" data-placeholder-en="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="lang-ar">البريد الإلكتروني</label>
+                            <label for="email" class="lang-en">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="lang-ar">تفاصيل طلبك أو رسالتك</label>
+                            <label for="message" class="lang-en">Message Details</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="اكتب تفاصيل مشروعك أو استفسارك هنا..." data-placeholder-en="Write your project details or inquiries here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span class="lang-ar">إرسال الرسالة</span>
+                            <span class="lang-en">Send Message</span>
+                            <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                    </form>
+
+                    <!-- Success Message Popup -->
+                    <div id="formSuccess" class="form-success-popup">
+                        <div class="success-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <h3 class="lang-ar">تم الإرسال بنجاح!</h3>
+                        <h3 class="lang-en">Sent Successfully!</h3>
+                        <p class="lang-ar">شكراً لتواصلك معي، سأقوم بالرد عليك في أقرب وقت ممكن.</p>
+                        <p class="lang-en">Thank you for reaching out. I will get back to you as soon as possible.</p>
+                        <button type="button" id="closeSuccessBtn" class="btn btn-secondary btn-small">
+                            <span class="lang-ar">إغلاق</span>
+                            <span class="lang-en">Close</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p class="copyright">
+                &copy; <span id="year">2026</span> Saad El Dine Moustafa. 
+                <span class="lang-ar">جميع الحقوق محفوظة.</span>
+                <span class="lang-en">All rights reserved.</span>
+            </p>
+            <div class="footer-links">
+                <a href="#home"><span class="lang-ar">الأعلى</span><span class="lang-en">Top</span></a>
+                <a href="mailto:saad.moustafa202@gmail.com">Email</a>
+                <a href="tel:+96176580224">Call</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
